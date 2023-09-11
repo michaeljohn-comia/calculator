@@ -33,3 +33,13 @@ btnEqual.addEventListener("click", function(){
     resultOfEquation(itemsOnScreen);
     itemsOnScreen = ""; 
 });
+
+var btnClear = document.querySelector("#btnClear");
+btnClear.addEventListener("click", () =>{
+    itemsOnScreen = itemsOnScreen.slice(0,-1);
+    screenItems.textContent = itemsOnScreen;
+})
+document.querySelector("#btnReset").addEventListener("click", () =>{
+    itemsOnScreen = "";
+    screenItems.textContent = itemsOnScreen;
+})

@@ -36,6 +36,10 @@ main {
     gap: 1rem;
     padding: 0.5rem;
 }
+.resetAndClear{
+    display: flex;
+    justify-content: space-between;
+}
 .key-rows>button {
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
@@ -50,4 +54,18 @@ main {
 }
 .key-rows>button:active{
     background-color: #d3d1d1;
+}
+#btnReset{
+    background-color: #ff5256;
+    color: white;
+}
+#btnReset:active{
+    background-color: #ff393c;
+}
+#btnEqual{
+    background-color: #f8b354;
+    color: white;
+}
+#btnEqual:active{
+    background-color: #f79a18;
 }
